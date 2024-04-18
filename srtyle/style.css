@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+body {
+    background: #0C0C0C;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.service {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.service__menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav {
+    background: rgba(0, 0, 0, 0.507);
+    border-top: 1px solid rgba(125, 115, 115, 0.499);
+    border-bottom: 1px solid rgba(125, 115, 115, 0.499);
+}
+
+.nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__title {
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 700;
+    background: #0A9418;
+    border: 4px solid #06600F;
+    border-radius: 4px;
+    padding: 5px 17px;
+    margin: 6px 0;
+}
+
+.menu {
+    display: flex;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    align-items: center;
+}
+
+.menu__link {
+    display: block;
+    padding: 22px 14px;
+}
+
+.menu__link:hover {
+    background: rgba(125, 115, 115, 0.499);
+}
+
+.opened {
+    background: #69CF17;
+}
+
+.preview {
+    background-image: url(../img/food-burger-wallpaper-preview\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    padding-top: 167px;
+    padding-bottom: 180px;
+    border-bottom: 50px solid rgb(0, 0, 0);
+}
+
+.preview__item--name {
+    color: #69CF17;
+    font-size: 72px;
+    font-weight: 900;
+    font-family: 'Raleway';
+    margin-bottom: 18px;
+}
+
+.preview__item--type {
+    color: #69CF17;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Raleway';
+    margin-bottom: 18px;
+}
+
+.preview__item--desc {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Raleway';
+    margin-bottom: 30px;
+}
+
+.preview__more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preview__more--price {
+    max-width: max-content;
+    color: #fff;
+    font-weight: 200;
+    font-size: 50px;
+    font-family: 'Raleway';
+    background: rgba(106, 207, 23, 0.507);
+    padding: 20px 76px;
+}
+
+.preview__more--link {
+    height: 55px;
+    width: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 400;
+    background: #69CF17;
+    border-radius: 6px;
+}
