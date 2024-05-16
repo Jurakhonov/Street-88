@@ -1,20 +1,26 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 a{
     text-decoration: none;
     color: inherit;
 }
+
 ul{
     list-style: none;
 }
 
 body {
     background: #0C0C0C;
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: 400;
 }
+
+/* *************************************************** */
 
 .container{
     max-width: 1140px;
@@ -24,12 +30,14 @@ body {
 }
 
 .service {
-    color: #fff;
-    font-family: 'Roboto';
-    font-weight: 400;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px;
+}
+
+.service__menu--link {
+    display: block;
+    padding: 20px 0;
 }
 
 .service__menu {
@@ -37,112 +45,307 @@ body {
     gap: 20px;
 }
 
+/* *************************************************** */
+
 .header__nav {
-    background: rgba(0, 0, 0, 0.507);
-    border-top: 1px solid rgba(125, 115, 115, 0.499);
-    border-bottom: 1px solid rgba(125, 115, 115, 0.499);
+    background: rgba(0, 0, 0, 52%);
+    border-bottom: 1px solid rgba(125, 115, 115, 50%);
+    border-top: 1px solid rgba(125, 115, 115, 50%);
 }
 
 .nav {
-    color: #fff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.logo__title {
-    font-family: 'Roboto';
-    font-size: 36px;
-    font-weight: 700;
-    background: #0A9418;
-    border: 4px solid #06600F;
-    border-radius: 4px;
-    padding: 5px 17px;
-    margin: 6px 0;
+    justify-content: space-between;
 }
 
 .menu {
     display: flex;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 18px;
-    align-items: center;
 }
 
 .menu__link {
     display: block;
     padding: 22px 14px;
+    transition: 0.3s;
 }
 
 .menu__link:hover {
-    background: rgba(125, 115, 115, 0.499);
+    background: #69CF17;
 }
 
 .opened {
     background: #69CF17;
 }
 
-.preview {
-    background-image: url(../img/food-burger-wallpaper-preview\ 1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 100vh; */
-    padding-top: 167px;
-    padding-bottom: 180px;
-    border-bottom: 50px solid rgb(0, 0, 0);
+.header__logo {
+    display: block;
+    padding: 8px 13px;
+    border: 4px solid #06600F;
+    border-radius: 4px;
+    background: rgba(10, 148, 24, 75%);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    margin: 6px 0;
 }
 
+/* *************************************************** */
+
 .preview__item--name {
-    color: #69CF17;
-    font-size: 72px;
     font-weight: 900;
-    font-family: 'Raleway';
-    margin-bottom: 18px;
+    font-size: 72px;
+    color: #69CF17;
 }
 
 .preview__item--type {
-    color: #69CF17;
     font-size: 36px;
+    line-height: 17px;
+    color: #69CF17;
     font-weight: 400;
-    font-family: 'Raleway';
-    margin-bottom: 18px;
 }
 
 .preview__item--desc {
-    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.preview__more--price {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 25px;
+    padding: 33px 76px;
+    background: rgba(106, 207, 23, 50%);
+    display: block;
+}
+
+.preview__more--link {
+    display: block;
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Raleway';
-    margin-bottom: 30px;
+    padding: 15px 71px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, #69CF17, #417D11);
+    border-radius: 6px;
+}
+
+.preview__more--link:hover {
+    background: linear-gradient(90deg, #417D11, #69CF17);
 }
 
 .preview__more {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
 }
 
-.preview__more--price {
-    max-width: max-content;
-    color: #fff;
-    font-weight: 200;
-    font-size: 50px;
-    font-family: 'Raleway';
-    background: rgba(106, 207, 23, 0.507);
-    padding: 20px 76px;
+.preview__item {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
-.preview__more--link {
-    height: 55px;
-    width: 255px;
+.preview {
+    border-bottom: 50px solid #000000;
+    background: url(../img/food-burger-wallpaper-preview\ 1.jpg) center / cover;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    font-family: 'Raleway';
+}
+
+/* *************************************************** */
+
+.tab__menu {
+    background: #292929;
+    display: flex;
+    box-shadow: 0px 1px 8px 0px rgb(17, 17, 17, 30%);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.tab__link {
+    display: block;
     font-size: 18px;
+    line-height: 24px;
     font-weight: 400;
-    background: #69CF17;
-    border-radius: 6px;
+    padding: 20px 0px;
+}
+
+.main__card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    display: none;
+}
+
+.tabs__body {
+    padding: 15px;
+    border-bottom: 50px solid #000000;
+    background: #393636;
+}
+
+.main__card:target {
+    display: grid;
+}
+
+.tab__link:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+/* *************************************************** */
+
+.img__box {
+    position: relative;
+}
+
+.card__img:hover ~ .buscket__link {
+    display: flex;
+}
+
+.buscket__link:hover {
+    display: flex;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.buscket__link {
+    background: rgba(106, 207, 23, 90%);
+    font-size: 62px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #000;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.card__title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+.card__desc {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+/* *************************************************** */
+
+.footer__bg {
+    background: linear-gradient(180deg, #000000, rgba(106, 207, 23, 50%));
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer__title {
+    display: flex;
+    font-size: 50px;
+    color: #69CF17;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 20px 0px;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__map {
+    width: 100%;
+    height: 500px;
+}
+
+.footer__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    padding-top: 30px;
+}
+
+.footer__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.footer__licens {
+    padding: 19px 0;
+    display: flex;
+    justify-content: center;
+    background: #1A3406;
+}
+
+/* *************************************************** */
+
+.main__story--bg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/photo_cropped\ 1.jpg) center / cover, no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.main__story--logo {
+    color: rgba(106, 207, 23, 70%);
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.main__story--info {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.main__about--us {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* *************************************************** */
+
+.container {
+    position: relative;
+}
+
+
+.nav__burger {
+    border: none;
+    outline: none;
+    color: #fff;
+    display: none;
+    background: #00000000;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
 }
